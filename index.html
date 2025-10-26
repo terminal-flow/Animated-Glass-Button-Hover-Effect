@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Premium Animated Glass Buttons — Terminal Flow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="stage" role="main" aria-label="Glass button showcase">
+    <section class="card">
+      <header class="card-head">
+        <div>
+          <h1 class="title">Glass Buttons</h1>
+          <p class="desc">Made by Terminal Flow — premium micro-interactions</p>
+        </div>
+
+      </header>
+
+      <div class="btn-grid" aria-hidden="false">
+        <!-- Plum voice: default (sheen + particles + magnet) -->
+        <button class="glass-btn voice-plum" id="btnPlum" aria-label="Launch sequence" data-variant="default">
+          <canvas class="sheen-canvas" aria-hidden="true"></canvas>
+          <div class="glow-layer" aria-hidden="true"></div>
+          <div class="glass-label"><div class="icon">L</div><span>Launch</span></div>
+        </button>
+
+        <!-- Amber voice: ripple-heavy (strong click ripple) -->
+        <button class="glass-btn voice-amber" id="btnAmber" aria-label="Deploy infrastructure" data-variant="ripple">
+          <canvas class="sheen-canvas" aria-hidden="true"></canvas>
+          <div class="glow-layer" aria-hidden="true"></div>
+          <div class="glass-label"><div class="icon">D</div><span>Deploy</span></div>
+        </button>
+
+        <!-- Gold voice: pulse + long sheen (dramatic) -->
+        <button class="glass-btn voice-gold" id="btnGold" aria-label="Access control" data-variant="pulse">
+          <canvas class="sheen-canvas" aria-hidden="true"></canvas>
+          <div class="glow-layer" aria-hidden="true"></div>
+          <div class="glass-label"><div class="icon">A</div><span>Access</span></div>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
